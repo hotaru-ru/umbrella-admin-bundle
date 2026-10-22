@@ -6,6 +6,8 @@ use Symfony\Component\Security\Core\Exception\CustomUserMessageAccountStatusExce
 use Symfony\Component\Security\Core\User\UserCheckerInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Umbrella\AdminBundle\Entity\BaseAdminUser;
+use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
+
 
 class UserChecker implements UserCheckerInterface
 {
@@ -20,7 +22,7 @@ class UserChecker implements UserCheckerInterface
         }
     }
 
-    public function checkPostAuth(UserInterface $user): void
+    public function checkPostAuth(UserInterface $user, ?TokenInterface $token = null): void
     {
     }
 }

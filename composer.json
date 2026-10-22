@@ -13,8 +13,13 @@
         {
             "name": "Adrien Cantepie",
             "email": "adrien.cantepie@gmail.com"
+        },
+        {
+            "name": "Vladimir Kazakov",
+            "email": "kazakov.vladimir@gmail.com"
         }
     ],
+    "minimum-stability": "stable",
     "require": {
         "php": ">=8.4",
         "ext-ctype": "*",
